@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "09Icon40BlackIcon40AddressBlack.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "09Icon40BlackIcon40AddressBlack@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "09Icon40BlackIcon40AddressBlack@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

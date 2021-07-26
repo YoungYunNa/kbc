@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BundleBuildId</key>
+	<string>F3E41859-BD80-4FB2-A6EB-A546F0ADF792 </string>
+	<key>CFBundleName</key>
+	<string>AMSLJBScanner2</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.10</string>
+	<key>CFBundleVersion</key>
+	<string>53</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2018 AhnLab, Inc. All rights reserved.</string>
+	<key>Platform Name</key>
+	<string>iphoneos</string>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+//for link c++ standard library

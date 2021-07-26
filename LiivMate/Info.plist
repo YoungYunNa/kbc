@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>리브메이트</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string></string>
+			<key>CFBundleURLName</key>
+			<string>com.kbcard.kat.liivmate</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>liivmate</string>
+				<string>kakao09ee91e91bc56e7f0ef996f84991141e</string>
+				<string>kakao4d7c13c769ed2d0c29cc9358088e93d7</string>
+				<string>liivmatetablepay</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>KAKAO_APP_KEY</key>
+	<string>4d7c13c769ed2d0c29cc9358088e93d7</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>daummaps</string>
+		<string>kakao09ee91e91bc56e7f0ef996f84991141e</string>
+		<string>kakao4d7c13c769ed2d0c29cc9358088e93d7</string>
+		<string>kakaolink</string>
+		<string>kakaotalk-5.9.7</string>
+		<string>line</string>
+		<string>kb-auth</string>
+		<string>kb-acp</string>
+		<string>kb-appcard-acp</string>
+		<string>kbkookmincard</string>
+		<string>kbcardshop</string>
+		<string>kbappcard</string>
+		<string>kbstoreowner</string>
+		<string>kbgolf</string>
+		<string>kbbank</string>
+		<string>iPlustarII</string>
+		<string>KBSTARPLUS</string>
+		<string>kbcardicarte</string>
+		<string>kb-wisewallet-acp</string>
+		<string>hdtvexternalcall</string>
+		<string>liiv</string>
+		<string>cydia</string>
+		<string>ispmobile</string>
+		<string>kbcardlifeshop</string>
+		<string>balance</string>
+		<string>payco</string>
+		<string>fb</string>
+		<string>twitter</string>
+		<string>kakaotalk</string>
+		<string>file</string>
+		<string>kakaomap</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>m.liivmate.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>카드번호, QR코드 인식을 위하여 카메라를 사용합니다.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>포인트리 보내기, 제휴쿠폰 선물하기 위해 연락처를 사용합니다.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Face ID를 사용하여 사용자 인증을 합니다.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>위치정보에 대한 사용을 허용해 주세요.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>위치정보에 대한 사용을 허용해 주세요.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>이미지를 저장 합니다.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>이미지를 저장 합니다.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>바로적립 메뉴에서 사용자 맞춤 서비스 제공을 위해서 필요합니다.</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>67369282zy.skadnetwork</string>
+		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>KCLMainStoryboard</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

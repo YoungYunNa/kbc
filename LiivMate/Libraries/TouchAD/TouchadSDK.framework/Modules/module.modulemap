@@ -1,0 +1,11 @@
+framework module TouchadSDK {
+  umbrella header "TouchadSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TouchadSDK.Swift {
+    header "TouchadSDK-Swift.h"
+    requires objc
+}

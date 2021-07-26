@@ -1,0 +1,116 @@
+//
+//  PrefixHeader.pch
+//  LiivMate
+//
+//  Created by KB_CARD_MINI_2 on 2016. 7. 18..
+//  Copyright © 2016년 KBCard. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define processesDoKill					withEvent
+#define scanJailBreak					a2a
+#define scanJailBreakValueToServer		sdljkef
+#define ProcessesDoKill(message)		([((id)[UIApplication sharedApplication].delegate) performSelector:@selector(processesDoKill:) withObject:message afterDelay:1])
+
+#import "AppDelegate.h"
+#import "AppInfo.h"
+#import "KCLServerSetting.h"
+#import "BlockAlertView.h"
+#import "UIView+InterfaceBuilder.h"
+#import "UIView+ParentViewController.h"
+#import "ViewController.h"
+#import "NSString+Security.h"
+#import "NSString+Util.h"
+#import "UserDefaults.h"
+#import "MateRequest.h"
+#import "KCLCommonHeader.h"
+#import "EdgeTextField.h"
+#import <AMSLJBScanner2/AMSLJBScanner2.h>
+#import <Firebase/Firebase.h>
+#import "MDDesignPopupView.h"
+#import "KCLRightPopupView.h"
+
+static NSString *const Net_Err_Msg	=	@"네트워크가 원활하지 않습니다.\n네트워크 확인 후 다시 시도해 주세요.";
+static NSString *const Req_Timeout_Msg = @"거래중 타임아웃이 발생 하였습니다.\n요청한 거래의 결과를 반드시 확인하시고 거래하여 주시기 바랍니다.";
+static NSString *const JB_Err_Msg	=	@"위변조 된 앱과 탈옥 된 폰으로는\n본 서비스를 이용할 수 없습니다.";
+
+#ifdef DEBUG
+//#define NSLog(...)
+#define NSLog( s, ... ) NSLog( @"[%@ %s(%d)] %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define TXLog( s, ... ) {NSLog( s,##__VA_ARGS__);tvlog([NSString stringWithFormat:(s), ##__VA_ARGS__]);}
+inline static void tvlog(NSString *log)
+{
+//	UIWindow *win = [UIApplication sharedApplication].windows.firstObject;
+//	UITextView *tv = [win viewWithTag:1004];
+//	if(tv) tv.text = [NSString stringWithFormat:@"%@\n\n%@",log,tv.text];
+};
+#else
+// NSLog 를 사용하지 않음.
+#define NSLog(...)
+#define TXLog( s, ... )
+#endif
+
+inline static long scanJailBreak()
+{
+    return 200L;
+};
+
+inline static long scanJailBreakValueToServer()
+{
+        return (arc4random()%3) + 199L;
+};
+
+//////////////////////////안티디버깅관련(Anti-Debugging)///////////////////////////
+#define antiDebugging					Tlqkfsha
+#define PT_DENY_ATTACH 31
+#import <dlfcn.h>
+#import <sys/types.h>
+#import <stdio.h>
+typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
+
+#if !defined(PT_DENY_ATTACH)
+
+#define PT_DENY_ATTACH 31
+
+#endif
+
+inline static void antiDebugging()
+{
+    //#if 1
+#ifndef DEBUG
+    
+    void* handle = dlopen(0, RTLD_GLOBAL | RTLD_NOW);
+    
+    ptrace_ptr_t ptrace_ptr = (ptrace_ptr_t)dlsym(handle, "ptrace");
+    
+    ptrace_ptr(PT_DENY_ATTACH, 0, 0, 0);
+    
+    dlclose(handle);
+    
+#endif
+}
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-function"
+static void dispatch_main_after(NSTimeInterval delay, void (^block)(void))
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        block();
+    });
+}
+#pragma clang diagnostic pop
+
+#define weakify(var) __weak typeof(var) AHKWeak_##var = var;
+#define strongify(var)\
+_Pragma("clang diagnostic push")\
+_Pragma("clang diagnostic ignored \"-Wshadow\"")\
+__strong typeof(var) var = AHKWeak_##var;\
+_Pragma("clang diagnostic pop")
+
+#endif /* PrefixHeader_pch */
+

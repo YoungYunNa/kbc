@@ -1,0 +1,9 @@
+/*
+ Copyright © 2018 AhnLab, Inc. All rights reserved.
+ */
+
+framework module AMSLJBScanner2 {
+    umbrella header "AMSLJBScanner2.h"
+    export *
+    module * { export * }
+}

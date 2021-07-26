@@ -1,0 +1,13 @@
+
+
+1. 액션추가하기
+  - MobileWeb Class를 상속받아 액션이름으로 Class를 생성한다.
+
+ex)
+	@interface joinSuccess : MobileWeb
+
+2. 액션 처리로직 코딩
+  - [-(void)run] 메서드에 로직을 구현
+  - self.paramDic 에 웹뷰에서 전달된 정보들이 들어있음
+  - [self finishedActionWithResult:nil success:YES]; 동작이 끝날경우 앞의 메서드호출, 호출시 전달파라미터와 성공여부
+  - HybridActionManager.h 상단의 define되어있는 정보 확인할 것

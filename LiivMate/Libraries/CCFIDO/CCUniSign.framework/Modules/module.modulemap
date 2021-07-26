@@ -1,0 +1,6 @@
+framework module CCUniSign {
+  umbrella header "CCUniSign.h"
+
+  export *
+  module * { export * }
+}

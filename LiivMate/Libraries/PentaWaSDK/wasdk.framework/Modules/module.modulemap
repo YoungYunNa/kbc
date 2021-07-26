@@ -1,0 +1,6 @@
+framework module wasdk {
+  umbrella header "wasdk.h"
+
+  export *
+  module * { export * }
+}
